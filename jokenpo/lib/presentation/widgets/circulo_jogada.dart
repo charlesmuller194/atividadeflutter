@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-/// Exibe uma imagem (jogada ou placeholder) em tamanho configurável.
 class CirculoJogada extends StatelessWidget {
   final double tamanho;
   final String imagem;

@@ -1,7 +1,6 @@
 import '../../domain/entities/jogada.dart';
 import '../../domain/entities/resultado.dart';
 
-/// Mapeia entidades de domínio para caminhos de assets.
 abstract final class JogadaAssets {
   static const _base = 'lib/assets';
 

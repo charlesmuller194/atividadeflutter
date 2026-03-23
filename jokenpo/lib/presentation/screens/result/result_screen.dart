@@ -6,7 +6,6 @@ import '../../theme/app_theme.dart';
 import '../../utils/jogada_assets.dart';
 import '../../widgets/circulo_jogada.dart';
 
-/// Tela de resultado: exibe as escolhas e o desfecho da rodada.
 class ResultScreen extends StatelessWidget {
   final Rodada rodada;
   final JogarUseCase jogarUseCase;

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../theme/app_theme.dart';
 
-/// Cabeçalho vermelho compartilhado entre as telas.
 class AppHeader extends StatelessWidget {
   const AppHeader({super.key});
 

@@ -5,9 +5,6 @@ import '../../domain/entities/resultado.dart';
 import '../../domain/entities/rodada.dart';
 import '../../domain/repositories/jogo_repository.dart';
 
-/// Implementação concreta de [JogoRepository].
-/// Toda a lógica de geração aleatória e de determinação do resultado
-/// fica isolada aqui, fora da UI e do domínio.
 class JogoRepositoryImpl implements JogoRepository {
   final _random = Random();
 

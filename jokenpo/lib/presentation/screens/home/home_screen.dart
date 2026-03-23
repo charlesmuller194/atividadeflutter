@@ -7,7 +7,6 @@ import '../../theme/app_theme.dart';
 import '../../utils/jogada_assets.dart';
 import '../../widgets/circulo_jogada.dart';
 
-/// Tela inicial: exibe o placeholder do APP e os botões de escolha do usuário.
 class HomeScreen extends StatelessWidget {
   final JogarUseCase jogarUseCase;
 
