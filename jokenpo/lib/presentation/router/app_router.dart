@@ -5,18 +5,14 @@ import '../../domain/usecases/jogar_usecase.dart';
 import '../screens/home/home_screen.dart';
 import '../screens/result/result_screen.dart';
 
-/// Gerencia todas as rotas nomeadas da aplicação.
-/// Centraliza a criação de telas e injeção de dependências via navegação.
 class AppRouter {
   final JogarUseCase jogarUseCase;
 
   AppRouter({required this.jogarUseCase});
 
-  // Nomes das rotas
   static const String home = '/';
   static const String result = '/result';
 
-  /// Gera a rota correspondente ao [RouteSettings] solicitado.
   Route<dynamic> onGenerateRoute(RouteSettings settings) {
     switch (settings.name) {
       case home:
@@ -36,7 +32,6 @@ class AppRouter {
         );
 
       default:
-        // Fallback para a tela inicial caso a rota não seja reconhecida
         return MaterialPageRoute(
           settings: settings,
           builder: (_) => HomeScreen(jogarUseCase: jogarUseCase),
