@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 import '../../../domain/entities/jogada.dart';
 import '../../../domain/usecases/jogar_usecase.dart';
+import '../../router/app_router.dart';
 import '../../theme/app_theme.dart';
 import '../../utils/jogada_assets.dart';
 import '../../widgets/circulo_jogada.dart';
-import '../result/result_screen.dart';
 
 /// Tela inicial: exibe o placeholder do APP e os botões de escolha do usuário.
 class HomeScreen extends StatelessWidget {
@@ -15,12 +15,7 @@ class HomeScreen extends StatelessWidget {
 
   void _onEscolha(BuildContext context, Jogada escolha) {
     final rodada = jogarUseCase(escolha);
-    Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (_) =>
-            ResultScreen(rodada: rodada, jogarUseCase: jogarUseCase),
-      ),
-    );
+    Navigator.of(context).pushNamed(AppRouter.result, arguments: rodada);
   }
 
   @override
